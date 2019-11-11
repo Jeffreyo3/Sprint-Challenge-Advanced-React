@@ -47,13 +47,11 @@
   flex-direction: column;
   align-items: center;
 
-  margin: 2.5% auto;
+  margin: .50vh auto;
   border: 1px solid black;
   border-radius: 10px;
 
-  width: 275px;
-  /* height: 220px; */
-  
+  width: 275px;  
 }
 
 .player-info {
@@ -63,8 +61,18 @@
   margin-top: auto;
 }
 
+
 h2 {
-  padding: 0 12.5%;
+  /* padding: 0 12.5%; */
+  width: 100%;
+  text-align: center;
+  background-color: rgba(87, 103, 121, 0.788);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 5% 0;
+  margin-top: 0;
+  color: whitesmoke;
+
 }
 
 h3 {
@@ -77,6 +85,13 @@ h3 {
 }
 
 .dark-mode .navbar {
-  background-color: #1F2022;
+  background-color: black;
   border: none;
+}
+
+.lights {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  justify-content: space-evenly;
 }

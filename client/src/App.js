@@ -31,7 +31,7 @@ class App extends React.Component {
       <div className="App">
         <NavBar />
       
-        <div className="player-container">
+        <div className="player-container"  data-testid='players'>
           {this.state.players.map( players => {
             return <Player key={players.id} players={players} />
           })}

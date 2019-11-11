@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 
+
 import Player from './components/Player.js';
 import NavBar from './components/NavBar.jsx';
 
@@ -31,7 +32,7 @@ class App extends React.Component {
         <NavBar />
       
         <div className="player-container">
-          {this.state.players.map(players => {
+          {this.state.players.map( players => {
             return <Player key={players.id} players={players} />
           })}
         </div>

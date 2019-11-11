@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import Player from './components/Player.js';
+import NavBar from './components/NavBar.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -27,9 +28,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 id="header">Players</h1>
-        </header>
+        <NavBar />
       
         <div className="player-container">
           {this.state.players.map(players => {
